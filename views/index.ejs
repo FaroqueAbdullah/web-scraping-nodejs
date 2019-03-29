@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <div>
+                <%= msg %>
+        </div>
+        <div class="visitedPlace-dolist">
+            <form action="/createFile" class="add_information" method="POST">
+                <h2 class="headline">Add Link</h2>
+                <input type="text" name="link" style='weight:100%;' placeholder="Link">
+                <input type="number" name="start_page" style='weight:100%'; placeholder="Start Page">
+                <input type="number" name="end_page" style='weight:100%;' placeholder="End Page">
+                <input type="submit">
+            </form>
+            <a href="/deleteFile">Delete</a>
+            <a href="/download">Download!</a>
+        </div>
+    </body>
+</html>
